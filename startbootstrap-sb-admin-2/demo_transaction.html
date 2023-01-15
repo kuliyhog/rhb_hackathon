@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Charts</title>
+    <title>Transaction Demo</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -20,7 +20,7 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-</head>
+</head> 
 
 <body id="page-top">
 
@@ -35,7 +35,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">RHB</div>
             </a>
 
             <!-- Divider -->
@@ -359,31 +359,29 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Charts</h1>
-                    <p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme.
-                        The charts below have been customized - for further customization options, please visit the <a
-                            target="_blank" href="https://www.chartjs.org/docs/latest/">official Chart.js
-                            documentation</a>.</p>
+                    <h1 class="h3 mb-2 text-gray-800">Behind the Scenes</h1>
+                    <p class="mb-4">This is how the payments would work.</p>
 
                     <!-- Content Row -->
                     <div class="row">
-
                         <div class="col-xl-8 col-lg-7">
                             <!-- Bar Chart -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Global Bank Location Balance</h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="chart-bar">
-                                        <canvas id="myBarChart"></canvas>
+                                        <canvas id="country_balance"></canvas>
                                     </div>
                                     <hr>
-                                    Styling for the bar chart can be found in the
-                                    <code>/js/demo/chart-bar-demo.js</code> file.
+                                    This is the bar chart visualising the balance in each countries.
+
+                                    <a href="#" onclick='updateData(event);' class="btn btn-success btn-circle btn-sm">
+                                        <i class="fas fa-check"></i>
+                                    </a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -448,8 +446,6 @@
     <script src="vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <!-- <script src="js/demo/chart-area-demo.js"></script> -->
-    <!-- <script src="js/demo/chart-pie-demo.js"></script> -->
     <script src="js/demo/chart-bar-demo.js"></script>
 
 </body>
