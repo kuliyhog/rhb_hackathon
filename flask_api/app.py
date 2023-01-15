@@ -59,7 +59,8 @@ user_base = {
   }
 }
 
-api_key = '214cfd593dc34a08acede10a254a478c'
+
+api_key = '<INSERT YOUR API KEY HERE>'
 exchange_rates = {}
 
 def get_currency_exchange_rates():
